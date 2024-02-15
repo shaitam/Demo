@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Menu Bar Responsive</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <link rel="stylesheet" href="style.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+      <div class="wrapper">
+            <header>
+                  <nav>
+                        <div class="menu-movil">
+                              <!--<i class="fa fa-bars fa-2x"></i>-->
+                              <span class="hamburguesa"></span>
+                              <span class="hamburguesa"></span>
+                              <span class="hamburguesa"></span>
+                        </div>
+
+                        <div class="logo">
+                              LOGO
+                        </div>
+
+                        <div class="menu">
+                              <ul>
+                                    <li><a href="#">Demo</a></li>
+                                    <li><a href="#">Demo</a></li>
+                                    <li><a href="#">Demo</a></li>
+                                    <li><a href="#">Demo</a></li>
+                                    <li><a href="#">Demo</a></li>
+                              </ul>
+                        </div>
+                  </nav>
+              
+            </header>
+
+            <div class="image-container1"  data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+                  <div class="image-box1" >
+                      <img src=" assest/Heading.png" alt="Image 1">
+                  </div>
+                  <div class="image-box1">
+                      <img src=" assest/Malysia.png" alt="Image 2">
+                  </div>
+                  <div class="image-box1">
+                      <img src=" assest/island.png" alt="Image 3">
+                  </div>
+              </div>
+
+              <div class="container">
+                  <div class="image-box2" data-aos="zoom-in-right">
+                      <img src=" assest/Thai.png" alt="Image Description">
+                  </div>
+                  <div class="text-box2" data-aos="zoom-in-left">
+                      <h1>
+                        Embark on a business odyssey in the heart of Thailand, where cultural diversity meets economic dynamism. </h1>
+                      <h2>SLet our seasoned experts guide you through the intricacies of the Thai market, transforming your entrepreneurial dreams into thriving realities.</h2>
+                     
+                  </div>
+              </div>
+
+              <div class="banner">
+                  <div class="banner-text">
+                      <h1>Continuous Growth for Your Enterprise </h1>
+                      <h2>Taking strategic steps like company incorporation is pivotal for business success. Our sustained advisory and financial support services empower you to concentrate on your core operations, while we handle the ongoing support functions. </h2>
+                  </div>
+              </div>
+
+<script>
+       // Menu-toggle button
+
+       $(document).ready(function() {
+            $(".menu-movil").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+                  $(".hamburguesa").hidden("showing");  
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      
+</script>
+     
+<script>
+ AOS.init();
+</script>
+
+</body>
+</html>
